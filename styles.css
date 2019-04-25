@@ -1,0 +1,112 @@
+header {
+    position: fixed;
+    text-align: center;
+    margin-left:150px ;
+
+}
+/* h1, h2, h3 {
+    text-align: center; */
+}
+.listcolor {
+    color: blue;
+}
+.background {
+    width: 100px;
+    height: 200px;
+    background-image: url(..//module-2-test/images/tree.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.images {
+    display: flex;
+}
+img[alt="Image 2"]{
+    padding: 5px;
+    border: solid blue;
+}
+span:nth-child(2n+1){
+    color: red;
+}
+.mediaquery {
+    background-color: blue;
+    size: 5rem 5rem;
+}
+
+@media (max-width: 768px) {
+    .mediaquery {
+      background-color: yellow;
+      size: 7rem 7rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mediaquery {
+      background-color: red;
+      size: 10rem 10rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .mediaquery {
+      background-color: purple;
+      size: 12rem 12rem;
+    }
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    flex-grow: 1;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: solid black 5px;
+    grid-gap: 5px;
+}
+.cell {
+    border: solid blue 2px;
+}
+.two {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.seven {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.font {
+    color: purple;
+    font-size: 120%;
+    font-family: 'Cute Font', cursive;
+}
+li {
+    text-decoration: line-through;
+}
+a:link {
+    background-color:red;
+}
+a:visited {
+    background-color:blue;
+}
+a:hover {
+    background-color: green;
+}
